@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590584400335",
+    "project_id": "animalia-18f27",
+    "storage_bucket": "animalia-18f27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590584400335:android:6070c8a3fb86e2b6a8aaba",
+        "android_client_info": {
+          "package_name": "com.example.animalia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590584400335-duk5vcgg0h5b8lk4p9pm6qu51d8lpfpm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS4a3PanuOXjk4QZnqR3W4iTax-Ly5gag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590584400335-duk5vcgg0h5b8lk4p9pm6qu51d8lpfpm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

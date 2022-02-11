@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crocodileLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EB322817" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="30dp">
+
+
+            <ImageView
+                android:id="@+id/crocodile_image_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/purple_200"
+                android:backgroundTint="@color/purple_200"
+                android:baselineAlignBottom="false"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/crocodile1" />
+
+            <TextView
+                android:id="@+id/crocodile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/noto_sans"
+                android:includeFontPadding="true"
+                android:outlineProvider="none"
+                android:shadowColor="@color/purple_500"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                android:text="@string/Crocodile"
+                android:textColor="@color/purple_200"
+                android:textSize="80sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_image_title" />
+
+            <TextView
+                android:id="@+id/crocodile_gallery_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="@string/Gallery"
+                android:textColor="#DFCAB1"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_desc" />
+
+            <HorizontalScrollView
+                android:id="@+id/crocodile_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_gallery_title">
+
+                <TableRow
+                    android:layout_width="150dp"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile2" />
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:contextClickable="false"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile3" />
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:contextClickable="false"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile4" />
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:contextClickable="false"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile5" />
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_5"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:contextClickable="false"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile6" />
+
+                    <ImageView
+                        android:id="@+id/crocodile_image_6"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/input"
+                        android:contextClickable="false"
+                        android:padding="2dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/crocodile7" />
+                </TableRow>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/crocodile_desc"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:text="@string/Crocodile_text"
+                android:textColor="#DFCAB1"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_title" />
+
+
+            <EditText
+                android:id="@+id/crocodile_comment"
+                android:layout_width="302dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/input"
+                android:fontFamily="@font/noto_sans"
+                android:gravity="center"
+                android:hint="@string/write_comment"
+                android:textColor="#DFCAB1"
+                android:textColorHint="#DFCAB1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_share_title"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/btn_send_crocodile"
+                android:layout_width="62dp"
+                android:layout_height="37dp"
+                android:layout_marginStart="-5dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="-2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/crocodile_comment"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_share_title"
+                app:srcCompat="@drawable/send_btn" />
+
+            <TextView
+                android:id="@+id/crocodile_share_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="@string/share_additional"
+                android:textColor="#DFCAB1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_gallery" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/crocodile_comments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crocodile_comment" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
